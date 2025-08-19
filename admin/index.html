@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<style>
+body{font-family:sans-serif;margin:20px;}
+input, button{padding:5px;margin:5px;}
+table{border-collapse:collapse;width:100%;margin-top:10px;}
+th, td{border:1px solid #ccc;padding:5px;text-align:center;}
+</style>
+</head>
+<body>
+<h2>Admin Dashboard</h2>
+
+<label>Markup Harga (%):</label>
+<input type="number" id="markup" value="5">
+<button id="save-markup">Simpan</button>
+<button id="refresh">Refresh Produk</button>
+
+<table id="products-table">
+  <thead><tr><th>ID</th><th>Nama</th><th>Harga Jual</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<h3>Saldo Virtual User</h3>
+<table id="saldo-table">
+  <thead><tr><th>UserID</th><th>Saldo</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<script src="admin.js"></script>
+</body>
+</html>
